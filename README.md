@@ -11,6 +11,8 @@ This project implements three FreeRTOS tasks on an ESP32 (Wokwi simulation), all
 
 **Theme:** Hardware Security — the LDR simulates a light sensor inside a secure enclosure (unexpected light implies possible tampering).
 
+##Wokwi Project Link: 
+https://wokwi.com/projects/456677076049609729
 
 ##1 Task Timing and Jitter
 **Sensor task timing is the most regular** because it uses `vTaskDelayUntil(&lastWakeTime, periodTicks)` with a fixed **500 ms period**. In my serial output, the sensor timing lines consistently show:
